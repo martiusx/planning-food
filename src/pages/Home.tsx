@@ -1,7 +1,13 @@
 import Nav from "../layout/Nav";
+import Main from "../layout/Main";
 
 const Home = () => {
-  return <Nav />;
+  return (
+    <>
+      <Nav />
+      <Main />
+    </>
+  );
 };
 
 export default Home;
