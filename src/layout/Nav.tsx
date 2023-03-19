@@ -1,7 +1,9 @@
+import Logo from "../components/Logo";
+
 const Nav = () => {
   return (
     <nav className="nav">
-      <div>LOGO</div>
+      <Logo />
       <ul className="nav__wrapper">
         <li className="nav__wrapper_element">
           <a href="/">Zaplanuj posiłki</a>

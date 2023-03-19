@@ -1,0 +1,10 @@
+.logo {
+  font-family: $font-family-logo;
+  color: $color-logo-first;
+  font-size: $font-basic-size * 2.5;
+
+  span {
+    color: $color-logo-second;
+    margin-left: 2vw;
+  }
+}
