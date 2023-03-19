@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 3vw 2vw;
+  background-color: $background-nav;
+
+  &__wrapper {
+    display: flex;
+    font-family: $font-family-text;
+    font-size: $font-basic-size * 1.5;
+
+    &_element {
+      margin-right: 5vw;
+
+      a {
+        color: $color-text-primary;
+
+        &:hover {
+          color: $color-highlights-buttons;
+        }
+      }
+    }
+  }
+}
