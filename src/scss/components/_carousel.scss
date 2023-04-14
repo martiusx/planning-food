@@ -4,7 +4,6 @@
 
   &__wrapper {
     display: flex;
-    position: absolute;
 
     &_arrows {
       position: absolute;
@@ -17,14 +16,16 @@
         position: absolute;
         width: 50px;
         height: 50px;
-        background-color: red;
         transform: translateY(-50%);
         top: 50%;
         cursor: pointer;
         z-index: 100;
-
+        background-image: url("../../assets/arrowLeft.png");
+        background-repeat: no-repeat;
+        background-size: contain;
         &-right {
           right: 0;
+          background-image: url("../../assets/arrowRight.png");
         }
       }
     }
@@ -33,9 +34,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: $font-basic-size * 5;
+      flex-direction: column;
+      font-size: $font-basic-size * 3;
       width: 100vw;
       height: 100%;
+      text-align: center;
+      padding: 150px 250px;
     }
   }
 }
