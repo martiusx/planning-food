@@ -6,7 +6,7 @@ const Carousel = () => {
   const [slide, setSlide] = useState<any>([1, 2, 3]);
 
   const translateStyle = { transform: `translateX(${translateValue}%)` };
-
+  const carouselContent = [{title:'Lorem1', paragraph: ' consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'}, {title:'Lorem2', paragraph: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}, {title:'Lorem3', paragraph: ' Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}]
   const nextSlide = () => {
     if (translateValue > (slide.length - 1) * -100) {
       setTranslateValue(translateValue - 100);
@@ -34,7 +34,9 @@ const Carousel = () => {
         </div>
         {slide.map((el: any, index: number) => {
           return (
-            <CarouselSlide key={index} style={translateStyle} content={el} />
+            <CarouselSlide key={index} style={translateStyle} 
+            contentTitle={carouselContent[index].title} 
+            contentParagraph={carouselContent[index].paragraph}/>
           );
         })}
       </div>
