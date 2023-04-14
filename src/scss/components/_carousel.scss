@@ -4,7 +4,6 @@
 
   &__wrapper {
     display: flex;
-    position: absolute;
 
     &_arrows {
       position: absolute;
@@ -21,13 +20,12 @@
         top: 50%;
         cursor: pointer;
         z-index: 100;
-        background-image: url('../../assets/arrowLeft.png');
+        background-image: url("../../assets/arrowLeft.png");
         background-repeat: no-repeat;
         background-size: contain;
         &-right {
           right: 0;
-          background-image: url('../../assets/arrowRight.png');
-         
+          background-image: url("../../assets/arrowRight.png");
         }
       }
     }
