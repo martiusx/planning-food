@@ -1,0 +1,33 @@
+.about_us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5vw 7vw;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    gap: 10vw;
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__img {
+      height: 100px;
+    }
+
+    h4 {
+      font-size: $font-basic-size * 2.5;
+      width: 80%;
+      margin-top: 30px;
+    }
+    p {
+      margin-top: 30px;
+      width: 80%;
+    }
+  }
+}
