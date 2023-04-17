@@ -1,0 +1,25 @@
+.call_to_action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12vw;
+  padding: 0 15px;
+  background-color: $background-secondary;
+  width: 100%;
+  padding: 3vw 2vw;
+  color: $color-text-primary;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: $font-basic-size * 3;
+  }
+
+  p {
+    margin-top: 25px;
+    font-size: $font-basic-size * 1.5;
+  }
+}
