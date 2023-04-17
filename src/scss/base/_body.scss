@@ -1,8 +1,9 @@
 body {
   width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("../../assets/background.png");
   background-size: contain;
   background-repeat: repeat;
+  font-family: $font-family-text;
 }
