@@ -1,0 +1,33 @@
+.about_author {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 150px 100px;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+
+  &__element {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-right: 100px;
+    font-weight: 400;
+
+    h4 {
+      font-size: $font-basic-size * 2.7;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: $font-basic-size * 1.7;
+    }
+
+    &__square {
+      width: 350px;
+      height: 350px;
+      background-color: $background-secondary;
+    }
+  }
+}
