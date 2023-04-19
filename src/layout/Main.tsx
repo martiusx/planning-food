@@ -2,6 +2,7 @@ import Carousel from "../components/Carousel";
 import ActionSection from "../components/ActionSection";
 import AboutUs from "../components/AboutUs";
 import Button from "../components/Button";
+import AboutAuthor from "../components/AboutAuthor";
 
 const Main = () => {
   return (
@@ -29,6 +30,7 @@ const Main = () => {
           </form>
         }
       />
+      <AboutAuthor />
     </div>
   );
 };
