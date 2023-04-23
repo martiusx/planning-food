@@ -10,6 +10,10 @@
     font-family: $font-family-text;
     font-size: $font-basic-size * 1.5;
 
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+
     &_element {
       margin-right: 5vw;
 
