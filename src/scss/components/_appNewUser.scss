@@ -1,0 +1,51 @@
+.app_new_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__wrapper {
+    background-color: $background-app-home;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed $color-text-table;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    font-size: $font-basic-size * 2.3;
+    line-height: 40px;
+    color: $color-text-header-columns;
+
+    h3 {
+      font-size: $font-basic-size * 3;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin: 20px 0;
+        font-size: $font-basic-size * 1.5;
+        padding: 5px 10px;
+      }
+
+      button {
+        width: 60%;
+      }
+    }
+  }
+}
