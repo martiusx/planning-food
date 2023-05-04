@@ -1,12 +1,16 @@
 import Nav from "../layout/Nav";
 import AppSideBar from "../components/AppSideBar";
+import AppNewUser from "../components/AppNewUser";
 
 const AppHome = () => {
   return (
-    <div className="app_home">
+    <>
       <Nav />
-      <AppSideBar />
-    </div>
+      <div className="app_home">
+        <AppSideBar />
+        <AppNewUser />
+      </div>
+    </>
   );
 };
 
