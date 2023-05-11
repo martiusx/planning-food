@@ -5,7 +5,7 @@ import Footer from "../layout/Footer";
 const Home = () => {
   return (
     <>
-      <Nav />
+      <Nav navType="homePage" username=""></Nav>
       <Main />
       <Footer />
     </>
