@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  padding: 3vw 2vw;
+  padding: 2vw 2vw;
   background-color: $background-secondary;
 
   &__wrapper {
     display: flex;
+    align-items: center;
     font-family: $font-family-text;
     font-size: $font-basic-size * 1.5;
 
@@ -23,7 +24,17 @@
         &:hover {
           color: $color-highlights-buttons;
         }
+
+        img {
+          width: 50px;
+        }
       }
     }
+  }
+}
+
+.nav_app__wrapper {
+  &_element {
+    margin-right: 2vw;
   }
 }

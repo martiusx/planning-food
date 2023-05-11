@@ -4,11 +4,13 @@ import Button from "./Button";
 const AppNewUser = () => {
   const [username, setUsername] = useState<string>("");
 
-  const saveUsername = () => {
-    if (username && username != "") {
+  const saveUsername = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (username && username !== "") {
       localStorage.setItem("username", username);
+      window.location.reload(); // dodajemy tutaj instrukcję, która spowoduje przeładowanie strony
     } else {
-      alert("wpisz swoje imię");
+      alert("Wpisz swoje imię");
     }
   };
 
@@ -17,11 +19,11 @@ const AppNewUser = () => {
       <div className="app_new_user__wrapper">
         <div className="app_new_user__text">
           <h3>Witaj,</h3>
-          <p>wygląda ma to że jesteś tutaj pierwszy raz!</p>
+          <p>Wygląda na to, że jesteś tutaj pierwszy raz!</p>
           <form onSubmit={saveUsername}>
             <input
               type="text"
-              placeholder="tutaj wpisz jak masz na imię"
+              placeholder="Tutaj wpisz jak masz na imię"
               onChange={(e) => setUsername(e.target.value)}
               pattern="[a-zA-Z]+"
             />

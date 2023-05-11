@@ -15,7 +15,7 @@ const AppHome = () => {
 
   return (
     <>
-      <Nav />
+      <Nav navType="appHome" username={username} />
       <div className="app_home">
         <AppSideBar />
         {username ? <h1>{username}</h1> : <AppNewUser />}
