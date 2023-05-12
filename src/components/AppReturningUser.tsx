@@ -1,10 +1,10 @@
-import AppWidget from "./AppWidget";
+import AppWidgetAddItem from "./AppWidgetAddItem";
 
 const AppReturningUser = () => {
   return (
     <div className="app_returning_user">
-      <AppWidget widgetText="dodaj przepis" />
-      <AppWidget widgetText="dodaj plan" />
+      <AppWidgetAddItem widgetText="dodaj przepis" />
+      <AppWidgetAddItem widgetText="dodaj plan" />
     </div>
   );
 };
