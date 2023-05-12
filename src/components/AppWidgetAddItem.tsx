@@ -4,7 +4,7 @@ interface AppWidgetProps {
   widgetText: string;
 }
 
-const AppWidget: React.FC<AppWidgetProps> = ({ widgetText }) => {
+const AppWidgetAddItem: React.FC<AppWidgetProps> = ({ widgetText }) => {
   return (
     <div className="app_widget">
       <img src={widgetIcon} />
@@ -13,4 +13,4 @@ const AppWidget: React.FC<AppWidgetProps> = ({ widgetText }) => {
   );
 };
 
-export default AppWidget;
+export default AppWidgetAddItem;
