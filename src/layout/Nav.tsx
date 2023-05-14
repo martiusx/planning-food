@@ -1,5 +1,6 @@
 import Logo from "../components/Logo";
 import userIcon from "../assets/user.png";
+import { Link } from "react-router-dom";
 
 interface NavProps {
   navType: string;
@@ -13,7 +14,9 @@ const Nav: React.FC<NavProps> = ({ navType, username }) => {
       {navType === "homePage" && (
         <ul className="nav__wrapper">
           <li className="nav__wrapper_element">
-            <a href="/">Zaplanuj posiłki</a>
+            <Link to="/app">
+              <a href="">Zaplanuj posiłki</a>
+            </Link>
           </li>
           <li className="nav__wrapper_element">
             <a href="/">Dlaczego Warto?</a>
