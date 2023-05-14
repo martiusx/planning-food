@@ -14,9 +14,7 @@ const Nav: React.FC<NavProps> = ({ navType, username }) => {
       {navType === "homePage" && (
         <ul className="nav__wrapper">
           <li className="nav__wrapper_element">
-            <Link to="/app">
-              <a href="">Zaplanuj posiłki</a>
-            </Link>
+            <Link to="/app">Zaplanuj posiłki</Link>
           </li>
           <li className="nav__wrapper_element">
             <a href="/">Dlaczego Warto?</a>
