@@ -4,6 +4,7 @@ import closeIcon from "../assets/close-icon.png";
 import infoIcon from "../assets/info-icon.png";
 import checkIcon from "../assets/check-icon.png";
 import alerIcon from "../assets/alert-icon.png";
+import AppWeekView from "./AppWeekView";
 
 const AppReturningUser = () => {
   return (
@@ -25,6 +26,7 @@ const AppReturningUser = () => {
         closeIcon={closeIcon}
         notificationMessage="masz już 99 przepisów, nieźle!"
       />
+      <AppWeekView />
     </div>
   );
 };
