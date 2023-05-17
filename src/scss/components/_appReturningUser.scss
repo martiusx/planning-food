@@ -1,0 +1,16 @@
+.app_returning_user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+
+  &__top_wrapper {
+    display: flex;
+
+    &__notification {
+      flex-direction: column;
+    }
+  }
+}
