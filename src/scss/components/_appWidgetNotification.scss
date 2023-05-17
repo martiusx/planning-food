@@ -3,4 +3,29 @@
   justify-content: center;
   align-items: center;
   border: 1px dashed black;
+  padding: 4px;
+
+  &__icon {
+    width: 35px;
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__message {
+    width: 90%;
+    margin-right: 10px;
+  }
+
+  &__close {
+    width: 20px;
+    align-self: flex-start;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
 }
