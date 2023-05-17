@@ -1,0 +1,64 @@
+.app_week_view {
+  border: 2px dashed $background-secondary;
+  padding: 10px;
+
+  &__table {
+    text-align: left;
+
+    tbody {
+      color: $color-text-table;
+    }
+
+    td,
+    th {
+      padding: 15px;
+    }
+
+    th {
+      font-weight: 600;
+      color: $color-text-header-columns;
+    }
+
+    tr,
+    caption {
+      border-bottom: 1px solid black;
+    }
+
+    caption {
+      padding: 15px;
+      color: $color-highlights-buttons;
+      font-weight: 500;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      button {
+        border: none;
+        cursor: pointer;
+        color: $color-highlights-buttons;
+        font-family: $font-family-text;
+        font-size: $font-basic-size * 1.2;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        img {
+          width: 18px;
+        }
+      }
+
+      &--left {
+        margin-right: 15px;
+      }
+
+      &--right {
+        transform: rotate(180deg);
+        margin-left: 15px;
+      }
+    }
+  }
+}
