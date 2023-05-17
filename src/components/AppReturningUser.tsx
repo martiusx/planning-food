@@ -9,23 +9,27 @@ import AppWeekView from "./AppWeekView";
 const AppReturningUser = () => {
   return (
     <div className="app_returning_user">
-      <AppWidgetAddItem widgetText="dodaj przepis" />
-      <AppWidgetAddItem widgetText="dodaj plan" />
-      <AppWidgetNotification
-        notificationIcon={infoIcon}
-        closeIcon={closeIcon}
-        notificationMessage="masz już 99 przepisów, nieźle!"
-      />
-      <AppWidgetNotification
-        notificationIcon={checkIcon}
-        closeIcon={closeIcon}
-        notificationMessage="masz już 99 przepisów, nieźle!"
-      />
-      <AppWidgetNotification
-        notificationIcon={alerIcon}
-        closeIcon={closeIcon}
-        notificationMessage="masz już 99 przepisów, nieźle!"
-      />
+      <div className="app_returning_user__top_wrapper">
+        <AppWidgetAddItem widgetText="dodaj przepis" />
+        <AppWidgetAddItem widgetText="dodaj plan" />
+        <div className="app_returning_user__top_wrapper__notification">
+          <AppWidgetNotification
+            notificationIcon={infoIcon}
+            closeIcon={closeIcon}
+            notificationMessage="masz już 99 przepisów, nieźle!"
+          />
+          <AppWidgetNotification
+            notificationIcon={checkIcon}
+            closeIcon={closeIcon}
+            notificationMessage="masz już 99 przepisów, nieźle!"
+          />
+          <AppWidgetNotification
+            notificationIcon={alerIcon}
+            closeIcon={closeIcon}
+            notificationMessage="masz już 99 przepisów, nieźle!"
+          />
+        </div>
+      </div>
       <AppWeekView />
     </div>
   );
