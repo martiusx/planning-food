@@ -2,12 +2,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
+  padding: 60px;
 
   &__top_wrapper {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__notification {
       flex-direction: column;
