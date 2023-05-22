@@ -10,8 +10,10 @@ const AppReturningUser = () => {
   return (
     <div className="app_returning_user">
       <div className="app_returning_user__top_wrapper">
-        <AppWidgetAddItem widgetText="dodaj przepis" />
-        <AppWidgetAddItem widgetText="dodaj plan" />
+        <div className="app_returning_user__top_wrapper__add_item">
+          <AppWidgetAddItem widgetText="dodaj przepis" />
+          <AppWidgetAddItem widgetText="dodaj plan" />
+        </div>
         <div className="app_returning_user__top_wrapper__notification">
           <AppWidgetNotification
             notificationIcon={infoIcon}
