@@ -26,7 +26,7 @@ const AppReturningUser = () => {
           <AppWidgetNotification
             notificationIcon={alerIcon}
             closeIcon={closeIcon}
-            notificationMessage="masz już 99 przepisów, nieźle!"
+            notificationMessage="Świetnie, że jesteś! Udanego planowania i smacznego! :)"
           />
         </div>
       </div>

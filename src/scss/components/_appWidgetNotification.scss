@@ -3,21 +3,22 @@
   justify-content: center;
   align-items: center;
   border: 1px dashed black;
-  padding: 4px;
-  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
 
   &__icon {
     width: 35px;
     margin-right: 10px;
 
     img {
-      width: 100%;
+      width: 150%;
     }
   }
 
   &__message {
-    width: 90%;
-    margin-right: 10px;
+    font-size: $font-basic-size * 2;
+    width: 100%;
+    margin: 0 20px;
   }
 
   &__close {
