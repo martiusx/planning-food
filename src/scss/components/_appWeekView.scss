@@ -1,11 +1,12 @@
 .app_week_view {
-  width: 100%;
   border: 2px dashed $background-secondary;
   padding: 10px;
   margin-top: 50px;
+  overflow-x: scroll;
 
   &__table {
     text-align: left;
+    width: 100%;
 
     tbody {
       color: $color-text-table;

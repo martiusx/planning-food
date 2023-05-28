@@ -6,6 +6,11 @@
   opacity: 0.9;
   color: $color-text-primary;
 
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    transform: translateX(-100%);
+  }
+
   ul {
     li {
       display: flex;
