@@ -8,7 +8,7 @@ const AppNewUser = () => {
     e.preventDefault();
     if (username && username !== "") {
       localStorage.setItem("username", username);
-      window.location.reload(); // dodajemy tutaj instrukcję, która spowoduje przeładowanie strony
+      window.location.reload();
     } else {
       alert("Wpisz swoje imię");
     }
