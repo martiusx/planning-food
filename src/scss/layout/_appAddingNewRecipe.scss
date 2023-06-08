@@ -33,18 +33,13 @@
   &__bottom_wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px 30px;
-
-    ol {
-      list-style: decimal;
-    }
-    ul {
-      list-style: circle;
-    }
 
     &__element {
       width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       h5 {
         font-size: $font-basic-size * 1.7;
@@ -53,15 +48,23 @@
         margin-bottom: 5px;
       }
 
-      input,
-      textarea {
-        width: 90%;
-        padding: 10px;
-      }
+      &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
 
-      img {
-        width: 35px;
-        cursor: pointer;
+        input,
+        textarea {
+          width: 90%;
+          padding: 10px;
+        }
+
+        img {
+          width: 35px;
+          cursor: pointer;
+          margin-left: 10px;
+        }
       }
 
       &--add {
@@ -71,7 +74,32 @@
       }
 
       &--list {
+        padding-left: 25px;
         margin-top: 30px;
+        max-height: 350px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        ol {
+          list-style: decimal;
+        }
+
+        ul {
+          list-style: inherit;
+        }
+
+        li {
+          span {
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 20px;
+              margin-left: 10px;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }

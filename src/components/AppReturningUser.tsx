@@ -6,7 +6,7 @@ import infoIcon from "../assets/info-icon.png";
 import checkIcon from "../assets/check-icon.png";
 import alerIcon from "../assets/alert-icon.png";
 import AppWeekView from "./AppWeekView";
-import AppAddingNewRecipe from "./AppAddingNewRecipe";
+import AppAddingNewRecipe from "../layout/AppAddingNewRecipe";
 
 interface AppReturningUserPulpitProps {
   onAddRecipeClick: any;
