@@ -26,14 +26,20 @@ const AppAddingNewRecipe = () => {
         <div className="app_adding_new_recipe__bottom_wrapper__element">
           <h5>INSTRUKCJE</h5>
           <div className="app_adding_new_recipe__bottom_wrapper__element__input">
-            <textarea></textarea>
-            <img src={plusIcon} alt="add icon"></img>
+            <form onSubmit={(e) => e.preventDefault()}>
+              <textarea
+                onChange={(e) => console.log(e.target.value)}
+              ></textarea>
+              <button onClick={() => console.log("hej")}>
+                <img src={plusIcon} alt="add icon"></img>
+              </button>
+            </form>
           </div>
           <div className="app_adding_new_recipe__bottom_wrapper__element--list">
             <ol>
-              {instructionsList.map((el) => {
+              {instructionsList.map((el, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <span>
                       {el} <img src={editIcon} alt="edit-icon" />
                       <img src={trashIcon} alt="remove-icon" />
@@ -47,14 +53,21 @@ const AppAddingNewRecipe = () => {
         <div className="app_adding_new_recipe__bottom_wrapper__element">
           <h5>SKŁADNIKI</h5>
           <div className="app_adding_new_recipe__bottom_wrapper__element__input">
-            <input type="text"></input>
-            <img src={plusIcon} alt="add icon"></img>
+            <form onSubmit={(e) => e.preventDefault()}>
+              <input
+                type="text"
+                onChange={(e) => console.log(e.target.value)}
+              ></input>
+              <button onClick={() => console.log("hej")}>
+                <img src={plusIcon} alt="add icon"></img>
+              </button>
+            </form>
           </div>
           <div className="app_adding_new_recipe__bottom_wrapper__element--list">
             <ul>
-              {ingredientsList.map((el) => {
+              {ingredientsList.map((el, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <span>
                       {el} <img src={editIcon} alt="edit-icon" />
                       <img src={trashIcon} alt="remove-icon" />

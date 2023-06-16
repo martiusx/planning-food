@@ -2,7 +2,7 @@ import widgetIcon from "../assets/plus.png";
 
 interface AppWidgetProps {
   widgetText: string;
-  onClickHandler: any;
+  onClickHandler: () => void;
 }
 
 const AppWidgetAddItem: React.FC<AppWidgetProps> = ({
@@ -11,7 +11,7 @@ const AppWidgetAddItem: React.FC<AppWidgetProps> = ({
 }) => {
   return (
     <div className="app_widget" onClick={onClickHandler}>
-      <img src={widgetIcon} />
+      <img src={widgetIcon} alt="widget icon" />
       <span>{widgetText}</span>
     </div>
   );

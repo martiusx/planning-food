@@ -23,7 +23,10 @@ const AppReturningUserPulpit: React.FC<AppReturningUserPulpitProps> = ({
             widgetText="dodaj przepis"
             onClickHandler={onAddRecipeClick}
           />
-          <AppWidgetAddItem widgetText="dodaj plan" onClickHandler={""} />
+          <AppWidgetAddItem
+            widgetText="dodaj plan"
+            onClickHandler={() => console.log("hej")}
+          />
         </div>
         <div className="app_returning_user__top_wrapper__notification">
           <AppWidgetNotification
